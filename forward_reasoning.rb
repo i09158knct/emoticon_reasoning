@@ -12,7 +12,7 @@ sentence = ARGV[0] || 'こんにちは。'
 emotions = emotion_k.get_results_from sentence
 emoticons = []
 emotions.each do |emotion|
-   emoticons = emoticons + emoticon_k.get_results_from(emotion)
+   emoticons += emoticon_k.get_results_from(emotion)
 end
 
 puts '---文章---'
