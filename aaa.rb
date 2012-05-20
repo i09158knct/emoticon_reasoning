@@ -16,4 +16,6 @@ csv.each do |row|
     aa.add_knowledge [row[1], row[2]]
   end
 end
+
+puts aa.get_knowledge_map_clone
       
